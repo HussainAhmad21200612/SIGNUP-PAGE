@@ -50,7 +50,7 @@ console.log(data);
       console.log(JSON.parse(data));
     })
   })
-  // request.write(d_ta);
+  request.write(d_ta);
   request.end();
 });
 app.post("/failure",function (req,res){
