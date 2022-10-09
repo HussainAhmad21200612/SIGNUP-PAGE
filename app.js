@@ -38,6 +38,7 @@ console.log(data);
     auth: "itsbacardi:96dff0eb76ed3c187c304744d0a3a6d0-us9"
   }
   const request = https.request(url, options, function(response) {
+    console.log(response);
     if (response.statusCode===200)
     {
       res.sendFile(__dirname+"/success.html");
